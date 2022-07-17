@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<div class="user">
+  <div class="pola">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chris_Evans_SDCC_2014.jpg/640px-Chris_Evans_SDCC_2014.jpg" width="200" height="200" >
+    <div class="info">
+      <h2 class="username"> <b> Chris Evans</b></h2>
+      <h4 class="email">Shashwatesht@gmail.com</h4>
+  </div>
+  </div>
+    
+</div>
+<section class="page-contain">
+  <a [routerLink]="'/user/post'" class="data-card">
+    <h3>{{ counter }}1</h3>
+    <h4>Blogs</h4>
+    <p>Click here to see your blogs!</p>
+    
+  </a>
+  <a [routerLink]="'/user/gallery'" class="data-card">
+    <h3>12</h3>
+    <h4>Pictures</h4>
+    <p>Click here to see your gallery </p>
+    
+  </a>
+</section>
+
+<button 
+        mat-raised-button
+        color="accent"
+        class="button"
+        >Edit</button>

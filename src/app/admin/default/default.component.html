@@ -1,0 +1,23 @@
+<mat-sidenav-container class ="container">
+    <mat-sidenav #sidebar >
+        <app-sidebar>
+
+        </app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content">
+            <div class="toolbar">
+                <mat-toolbar>
+                    <mat-icon (click)='sidebar.toggle()'>menu</mat-icon>
+                    <button mat-button class="menu-button" [routerLink]="['']">
+                        <mat-icon>logout</mat-icon>
+                    </button>
+                    <!-- <button (click)='sidebar.toggle()'>toggle sidebar</button> -->
+                </mat-toolbar>
+            </div>
+            <div class="main">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
